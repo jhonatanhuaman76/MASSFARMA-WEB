@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imagenes/logo01.ico">
+  <title>Nosotros | MassFarma</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/cuenta.css">
+  <link rel="stylesheet" href="CSS/style-nosotros.css">
+</head>
+
+<body>
+
+  <nav class="menu">
+    <section class="menu__sup">
+      <div class="menu__sup-telefono">
+        <img src="imagenes/telefono.png" alt="">
+        <p>Call center: (01) 547-2020</p>
+      </div>
+      <ul class="menu__sup-contenedor-links">
+        <li>
+          <a class="menu__sup-link a--blanco" href="nosotros.html">
+            <img src="imagenes/nosotros.png" alt="">
+            <span>Nosotros</span>
+          </a>
+        </li>
+        <li>
+          <a href="contacto.html" class="menu__sup-link a--blanco">
+            <img src="imagenes/correo.png" alt="">
+            <span>Contacto</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu__sup-link a--blanco">
+            <img src="imagenes/ayuda.png" alt="">
+            <span>Ayuda</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="menu__centro">
+      <img class="menu__centro-hamburguesa" src="imagenes/hamburguesa.png" alt="">
+      <img class="menu__centro-logo" src="imagenes/logo.png" alt="">
+      <div class="menu__centro-boton-largo">
+        <img src="imagenes/location.png" alt="">
+        <p>Ingresa tu dirección</p>
+        <p>Direccion</p>
+      </div>
+      <div class="menu__centro-buscador">
+        <input type="text" placeholder="Busca una marca o producto">
+        <div class="menu__centro-lupa"><img src="imagenes/lupa.png" alt=""></div>
+      </div>
+      <div class="menu__centro-boton-largo">
+        <img src="imagenes/truck.png" alt="">
+        <p>Sigue tu pedido</p>
+        <p>Pedidos</p>
+      </div>
+      <div class="menu__centro-item">
+        <div class="menu__centro-boton-corto btnLogin-popup">
+          <img src="imagenes/cuenta.png" alt="">
+          <p>Cuenta</p>
+        </div>
+        <div id="btn-carrito" class="menu__centro-boton-corto">
+          <img src="imagenes/carrito.png" alt="">
+          <p>Carrito</p>
+          <span class="contador-productos contador-carrito-icon">0</span>
+        </div>
+      </div>
+    </section>
+    <hr class="menu__hr">
+    <section class="menu__inf">
+      <ul class="menu__inf-contenedor-links">
+        <li class="menu__inf-item menu__inf-item--show  a--efectoHover">
+          <p class="menu__inf-link">
+            <span>Categorías</span>
+            <img class="menu__arrow" src="imagenes/flecha-abajo.png" alt="">
+          </p>
+          <ul class="menu__inf-anidado">
+            <li class="menu__inf-inside">
+              <a class="menu__inf-link menu__inf-link--inside a--negro" href="categoria.html?cate=0">Cuidado pesonal y
+                belleza</a>
+            </li>
+            <li class="menu__inf-inside">
+              <a class="menu__inf-link menu__inf-link--inside a--negro" href="categoria.html?cate=1">Mamá y Bebé</a>
+            </li>
+            <li class="menu__inf-inside">
+              <a class="menu__inf-link menu__inf-link--inside a--negro" href="categoria.html?cate=2">Medicinas y
+                Tratamientos</a>
+            </li>
+            <li class="menu__inf-inside">
+              <a class="menu__inf-link menu__inf-link--inside a--negro" href="categoria.html?cate=3">Primeros
+                Auxilios</a>
+            </li>
+            <li class="menu__inf-inside">
+              <a class="menu__inf-link menu__inf-link--inside a--negro" href="categoria.html?cate=4">Vitaminas y
+                Suplementos</a>
+            </li>
+            <li class="menu__inf-inside">
+              <a class="menu__inf-link menu__inf-link--inside a--negro" href="categoria.html?cate=5">Fitness y
+                Nutrición</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__inf-item">
+          <a class="menu__inf-link a--negro" href="ofertas.html">Ofertas y Promociones</a>
+        </li>
+        <li class="menu__inf-item">
+          <a class="menu__inf-link a--negro" href="#">Blog</a>
+        </li>
+        <li class="menu__inf-item">
+          <a class="menu__inf-link a--negro" href="#">Sorteos</a>
+        </li>
+      </ul>
+    </section>
+    <div class="shadow">
+      <div class="shadow--background"></div>
+    </div>
+  </nav>
+  <!-- <hr class="menu__hr"> -->
+  <div class="menu-hambuerguesa">
+    <ul class="menu-hambuerguesa__links">
+      <li class="menu-hambuerguesa__item">
+        <a href="nosotros.html" class="menu-hambuerguesa__link a--negro">
+          <img src="imagenes/nosotros-mh.png" alt="">
+          <span>Nosotros</span>
+        </a>
+      </li>
+      <li class="menu-hambuerguesa__item">
+        <a href="contacto.html" class="menu-hambuerguesa__link a--negro">
+          <img src="imagenes/contacto-mh.png" alt="">
+          <span>Contacto</span>
+        </a>
+      </li>
+      <li class="menu-hambuerguesa__item">
+        <a href="#" class="menu-hambuerguesa__link a--negro">
+          <img src="imagenes/ayuda-mh.png" alt="">
+          <span>Ayuda</span>
+        </a>
+      </li>
+      <li class="menu-hambuerguesa__item menu-hambuerguesa__item--show">
+        <p class="menu-hambuerguesa__link">
+          <span class="menu-hamburguesa__link-anidado">
+            <img src="imagenes/categorias-mh.png" alt="">
+            Categorías
+          </span>
+          <img class="menu-hambuerguesa__arrow" src="imagenes/flecha-abajo.png" alt="">
+        </p>
+        <ul class="menu-hambuerguesa__anidado">
+          <li class="menu-hambuerguesa__inside">
+            <a class="menu-hambuerguesa__link menu-hambuerguesa__link--inside a--negro"
+              href="categoria.html?cate=0">Cuidado pesonal y
+              belleza</a>
+          </li>
+          <li class="menu-hambuerguesa__inside">
+            <a class="menu-hambuerguesa__link menu-hambuerguesa__link--inside a--negro"
+              href="categoria.html?cate=1">Mamá
+              y Bebé</a>
+          </li>
+          <li class="menu-hambuerguesa__inside">
+            <a class="menu-hambuerguesa__link menu-hambuerguesa__link--inside a--negro"
+              href="categoria.html?cate=2">Medicinas y
+              Tratamientos</a>
+          </li>
+          <li class="menu-hambuerguesa__inside">
+            <a class="menu-hambuerguesa__link menu-hambuerguesa__link--inside a--negro"
+              href="categoria.html?cate=3">Primeros Auxilios</a>
+          </li>
+          <li class="menu-hambuerguesa__inside">
+            <a class="menu-hambuerguesa__link menu-hambuerguesa__link--inside a--negro"
+              href="categoria.html?cate=4">Vitaminas y Sumplementos</a>
+          </li>
+          <li class="menu-hambuerguesa__inside">
+            <a class="menu-hambuerguesa__link menu-hambuerguesa__link--inside a--negro"
+              href="categoria.html?cate=5">Fitness y Nutrición</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-hambuerguesa__item">
+        <a class="menu-hambuerguesa__link a--negro" href="ofertas.html">
+          <img src="imagenes/ofertas-mh.png" alt="">
+          Ofertas y Promociones
+        </a>
+      </li>
+      <li class="menu-hambuerguesa__item">
+        <a class="menu-hambuerguesa__link a--negro" href="#">
+          <img src="imagenes/blog-mh.png" alt="">
+          Blog
+        </a>
+      </li>
+      <li class="menu-hambuerguesa__item">
+        <a class="menu-hambuerguesa__link a--negro" href="#">
+          <img src="imagenes/sorteos-mh.png" alt="">
+          Sorteos
+        </a>
+      </li>
+      <li class="menu-hambuerguesa__item location">
+        <a class="menu-hambuerguesa__link a--negro" href="#">
+          <img src="imagenes/location.png" alt="">
+          Ingresa tu direccion
+        </a>
+      </li>
+      <li class="menu-hambuerguesa__item truck">
+        <a class="menu-hambuerguesa__link a--negro" href="#">
+          <img src="imagenes/truck.png" alt="">
+          Sigue tu pedido
+        </a>
+      </li>
+      <li class="menu-hambuerguesa__item buscador">
+        <div class="menu-hambuerguesa__buscador">
+          <input type="text" placeholder="Buscar...">
+          <div class="menu-hambuerguesa__lupa"><img src="imagenes/lupa.png" alt=""></div>
+        </div>
+      </li>
+    </ul>
+    <div class="menu-hambuerguesa__cerrar">
+      <img src="imagenes/close.png" alt="">
+    </div>
+  </div>
+
+  <div class="cuenta">
+    <div class="CAUSA">
+      <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+      <div class="for-box login">
+        <h2>INICIAR SESIÓN</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <input type="correo electronico" required>
+            <label>Correo electronico</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"></span>
+            <input type="password" required>
+            <label>contraseña</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">Recordarme</label>
+            <a href="#">Olvide mi contraseña</a>
+          </div>
+          <button type="submit" class="btn">Ingresar</button>
+          <div class="login-register">
+            <p>¿Aun no tienes cuenta? <a href="#" class="register-link">Registrate</a></p>
+          </div>
+        </form>
+      </div>
+      <div class="for-box register">
+        <h2>Registrarse</h2>
+        <form action="#" class="register-contenedor">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+            <input type="text" required>
+            <label>Nombres y Apellidos</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <input type="correo electronico" required>
+            <label>Correo electronico</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input type="password" required>
+            <label>contraseña</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="id-card-outline"></ion-icon></span>
+            <input type="text" required>
+            <label>DNI, carne de extranjeria, etc </label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="call-outline"></ion-icon></ion-icon></span>
+            <input type="text" required>
+            <label>Celular</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input type="password" required>
+            <label>Confirma contraseña</label>
+          </div>
+          <div class="pablito">
+            <div class="remember-forgot">
+              <label><input type="checkbox">Aceptar terminos y condiciones</label>
+            </div>
+            <button type="submit" class="btn">Registrate</button>
+            <div class="login-register">
+              <p>¿Ya tienes una cuenta? <a href="#" class="login-link">Iniciar sesión</a></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="carrito_contenedor">
+    <div class="carrito_titulo">
+      <h3>Mi Compra (<span class="contador-productos">0</span>)</h3>
+      <img id="carrito_cerrar" src="imagenes/x-button.png" alt="">
+    </div>
+    <div class="carrito_cupon">
+      <div class="carrito_cupon-titulo">
+        <img src="imagenes/cupon.png" alt="">
+        <p>¿Tienes un cupón de descuento?</p>
+      </div>
+      <div class="carrito_cupon-input">
+        <input type="text" placeholder="Código de descuento">
+        <button type="submit">Aplicar</button>
+      </div>
+    </div>
+    <div class="carrito_productos">
+    </div>
+    <div class="carrito_inferior">
+      <div class="carrito_importe-pagar">
+        <div class="carrito_subtotal">
+          <p>subtotal</p>
+          <p>S/. <span>0.00</span></p>
+        </div>
+        <div class="carrito_total-pagar">
+          <p>Tototal a pagar</p>
+          <p>S/ <span>0.00</span></p>
+        </div>
+      </div>
+      <div class="carrito_inferior-botones">
+        <a class="btn-farmacia--negro" href="#">Ir a carrito</a>
+        <a class="btn-farmacia--celeste" href="#">Ir a pagar</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+  <div class="relleno-nav"></div>
+
+  <header class="banner-header">
+    <img src="imagenes/banner-nosotros.png" alt="">
+    <div class="ubicacion-logo">
+      <img src="imagenes/logo-farma.png" alt="">
+    </div>
+  </header>
+
+  <section class="section-somos">
+    <img class="caja-shadow" src="imagenes/quienes-somos.png" alt="">
+    <div class="text-somos">
+      <h2>¿Quiénes somos?</h2>
+      <hr>
+      <p>MassFarma es una plataforma líder en la transformación de la experiencia de compra
+        en la industria farmacéutica. Nos enorgullece ofrecer una tienda virtual que
+        brinda acceso fácil y conveniente a productos farmacéuticos y sanitarios
+        desde la comodidad del hogar. Con un equipo comprometido y apasionado, estamos
+        impulsados ​​por la innovación y la excelencia en el servicio al cliente.</p>
+      <p>Nos destacamos como una plataforma innovadora en el ámbito farmacéutico, comprometidas
+        en brindar una experiencia de compra revolucionaria a través de nuestra
+        tienda virtual. Con un equipo apasionado y experto en el sector, nos
+        esforzamos por proporcionar a nuestros clientes un acceso fácil y
+        conveniente a productos farmacéuticos y sanitarios desde la comodidad de
+        sus hogares.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="contenedor-zoom">
+
+      <div class="contenedor-somos">
+
+        <img class="contenedor-logo" src="imagenes/logo-farma.png" alt="">
+        <hr>
+        <br>
+        <p>
+          MassFarma es una plataforma líder que transforma la experiencia de compra en
+          la industria farmacéutica a través de una tienda virtual. Ofrece a los
+          clientes un acceso fácil y conveniente a una amplia gama de productos
+          farmacéuticos y sanitarios, permitiéndoles realizar compras desde la
+          comodidad de sus hogares mediante plataformas en línea. La plataforma
+          destaca por su compromiso con la calidad, la innovación tecnológica y un
+          servicio excepcional, brindando a los clientes la flexibilidad de comprar
+          las 24 horas del día, los 7 días de la semana. Con un enfoque centrado en
+          la comodidad y la excelencia, MassFarma redefine la experiencia de compra
+          en línea en el sector farmacéutico.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="cont-nosotros">
+      <div class="item">
+        <div class="tex-left">
+          <div class="cont-tex">
+            <h2 class="p1">MISIÓN</h2>
+            <p class="p2">En MassFarma, nuestra misión es mejorar la calidad de vida
+              de las personas al proporcionar un acceso sencillo a productos farmacéuticos
+              de alta calidad.</p>
+          </div>
+        </div>
+        <div class="img-right">
+          <img src="imagenes/nosotros-item1.jpg" alt="">
+        </div>
+      </div>
+      <div class="item">
+        <div class="tex-left">
+          <div class="cont-tex">
+            <h2 class="p1">VISIÓN</h2>
+            <p class="p2">Nuestra visión en MassFarma es ser
+              líderes en la revolución de la experiencia de compra farmacéutica
+              en línea. </p>
+          </div>
+        </div>
+        <div class="img-right">
+          <img src="imagenes/nosotros-item2.png" alt="">
+        </div>
+      </div>
+      <div class="item">
+        <div class="tex-left">
+          <div class="cont-tex">
+            <h2 class="p1">VALORES</h2>
+            <p class="p2">Liderazgo - Perseverancia - Actitud - Ética</p>
+          </div>
+        </div>
+        <div class="img-right">
+          <img src="imagenes/nosotros-item3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="newsletter_titulo">
+      <h2>¡REGITRATE A NUESTRO NEWSLETTER</h2>
+      <p>RECIBE NUESTRO CATÁLOGO, PROMOCIONES Y NOVEDADES DIRECTAMENTE A TU CORREO</p>
+    </div>
+    <div class="newsletter_input">
+      <input type="text" placeholder="REGISTRATE CON TU EMAIL">
+      <button type="submit">
+        <span></span>
+        ENVIAR
+      </button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="fo-nosotros">
+      <h3 class="title-footer">
+        <img src="imagenes/icono-logo-blanco.png" alt="">
+        <span>SOBRE MAS FARMA</span>
+      </h3>
+      <p>MassFarma es una plataforma líder que transforma la experiencia de compra en
+        la industria farmacéutica a través de una tienda virtual. Ofrece a los
+        clientes un acceso fácil y conveniente a una amplia gama de productos
+        farmacéuticos y sanitarios [....]</p>
+      <a href="nosotros.html">VER MÁS ></a>
+    </div>
+
+    <div class="fo-contacto">
+      <h3 class="title-footer">CONTÁCTANOS</h3>
+      <div class="enlaces-contacto">
+        <div class="item-fo-contacto">
+          <img src="imagenes/telefono.png" alt="">
+          <a class="a-line-hover" href="#">(01) 547-2020</a>
+        </div>
+        <div class="item-fo-contacto">
+          <img src="imagenes/correo.png" alt="">
+          <a class="a-line-hover" href="#">example@massfarma.com</a>
+        </div>
+        <div class="item-fo-contacto">
+          <img src="imagenes/ubicacion.png" alt="">
+          <a class="a-line-hover" href="#">San Antonio - Lima</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="fo-servicio-cliente">
+      <h3 class="title-footer">SERVICIO AL CLIENTE</h3>
+      <div class="enlaces-servicio-cliente">
+        <a class="a-line-hover" href="#">Preguntas frecuentes</a>
+        <a class="a-line-hover" href="#">Términos y condiciones</a>
+        <a class="a-line-hover" href="#">Política de privacidad</a>
+        <a class="a-line-hover" href="#">Cambios y devoluciones</a>
+      </div>
+    </div>
+
+    <div class="fo-redes">
+      <h3 class="title-footer">REDES SOCIALES</h3>
+      <div class="social-media">
+        <img src="imagenes/facebook.png" alt="">
+        <img src="imagenes/instagram.png" alt="">
+        <img src="imagenes/linkedin.png" alt="">
+      </div>
+    </div>
+
+    <div class="fo-pago">
+      <h3 class="title-footer">METODOS DE PAGO</h3>
+      <div class="icons-pago">
+        <img src="imagenes/visa.png" alt="">
+        <img src="imagenes/yape.png" alt="">
+        <img src="imagenes/mastercard.png" alt="">
+      </div>
+    </div>
+
+    <div class="fo-reclamaciones">
+      <h3 class="title-footer">LIBRO DE<br>RECLAMACIONES</h3>
+      <img src="imagenes/libro-reclamaciones.png" alt="">
+    </div>
+  </footer>
+
+  <script src="JS/nosotros.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="JS/menu.js"></script>
+  <script src="JS/carrito.js"></script>
+  <script src="JS/cuenta.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

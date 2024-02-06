@@ -1,0 +1,196 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.imagepri {
+  width: 100%;
+  height: 350px;
+  background-image: linear-gradient(to right, hsla(210, 71%, 3%, 0.4), hsla(247, 90%, 8%, 0.4)),
+    url(../imagenes/principal.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.con {
+  color: #fff;
+  font-family: arial;
+  font-size: 4rem;
+}
+
+.cont {
+  padding: 30px var(--padding-page);
+}
+.titulo-contenedor {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+.titulo-contenedor > hr {
+  width: 100%;
+  height: 1px;
+}
+.cont p {
+  font-family: arial;
+}
+.p {
+  padding: 5px;
+}
+.pad {
+  display: flex;
+}
+.im {
+  --image: url(../imagenes/segundo.png);
+  width: 60%;
+  padding: 20px;
+  padding-left: 50px;
+  background-image: linear-gradient(to right, hsla(210, 71%, 3%, 0.2), hsla(247, 90%, 8%, 0.4)),
+    var(--image);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ri {
+  width: 180px;
+}
+.inf {
+  color: #fff;
+}
+
+.inf h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+.inf-item img {
+  width: 25px;
+}
+.inf-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding: var(--padding-page);
+  background-color: var(--blanco2);
+}
+.form h2 {
+  font-size: 1.5rem;
+}
+.imp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.imp input {
+  outline: none;
+  border: 1px solid var(--gris-texto-claro);
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.txt-area-contacto {
+  outline: none;
+  border: 1px solid var(--gris-texto-claro);
+  border-radius: 10px;
+  resize: none;
+  padding: 15px;
+}
+.che {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.che h4 {
+  padding: 10px;
+}
+
+.bot {
+  text-align: center;
+}
+.bot button {
+  outline: none;
+  width: 170px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.re {
+  width: 100%;
+}
+.ubi iframe {
+  width: 100%;
+  padding: 10px;
+}
+
+.newsletter {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 760px) {
+  .pad {
+    flex-direction: column;
+  }
+
+  .im {
+    width: 100%;
+    --image: url(../imagenes/contacto-movil.jpg);
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .inf-item{
+    gap: 8px;
+  }
+
+  .inf-item img{
+    width: 20px;
+  }
+
+  .inf h3{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .ri{
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .ri{
+    width: 120px;
+  }
+
+  .form h2{
+    font-size: 1.2rem;
+  }
+
+  .form,
+  .form input{
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .im{
+    flex-direction: column-reverse;
+  }
+}

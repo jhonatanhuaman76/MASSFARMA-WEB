@@ -1,0 +1,172 @@
+:root {
+  --color-verdecito: #b2d235;
+  --padding: 130px;
+  --colorback: #1d949a;
+}
+body {
+  margin: 0;
+}
+.banner-header {
+  position: relative;
+  height: 320px;
+  display: flex;
+}
+.banner-header img {
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+.ubicacion-logo img {
+  width: 320px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+/*QUIENES SOMOS*/
+
+.section-somos {
+  display: flex;
+  padding: var(--padding-section);
+  gap: 40px;
+  padding-bottom: 60px;
+}
+
+.section-somos > img,
+.text-somos {
+  width: 50%;
+  object-fit: cover;
+}
+
+.text-somos > h2 {
+  font-size: 2rem;
+}
+
+.text-somos > hr {
+  margin: 15px 0;
+}
+
+.text-somos > p {
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.contenedor-zoom {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  min-height: 500px;
+  min-width: 60%;
+  max-width: 100%;
+  border-radius: 20px;
+  background-color: var(--colorback);
+  transition: width 80ms;
+}
+.contenedor-somos {
+  padding: 50px;
+  color: white;
+}
+.contenedor-somos hr {
+  border-top: 3px solid var(--color-verdecito);
+  border-radius: 3px;
+}
+.contenedor-logo {
+  width: 200px;
+  height: auto;
+}
+.cont-nosotros {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: var(--padding-section);
+  gap: 60px;
+}
+.item {
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  max-width: 650px;
+  box-shadow: 0px 4px 13px 1px rgba(196, 196, 196, 0.25);
+}
+.tex-left {
+  border-radius: 20px 0 0 20px;
+  background-color: var(--colorback);
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  width: 50%;
+}
+
+.img-right {
+  width: 50%;
+  border-radius: 0 20px 20px 0;
+  overflow: hidden;
+  display: flex;
+}
+.img-right img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 850px) {
+  .banner-header {
+    height: 280px;
+  }
+  .ubicacion-logo img {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .section-somos {
+    flex-direction: column-reverse;
+  }
+
+  .section-somos > img,
+  .text-somos {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .banner-header {
+    height: 240px;
+  }
+  .ubicacion-logo img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .item {
+    flex-direction: column;
+  }
+
+  .contenedor-zoom {
+    min-width: 70%;
+  }
+
+  .contenedor-logo {
+    width: 150px;
+  }
+
+  .tex-left,
+  .img-right {
+    width: 100%;
+  }
+
+  .img-right {
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  .tex-left {
+    border-radius: 20px 20px 0px 0px;
+  }
+}

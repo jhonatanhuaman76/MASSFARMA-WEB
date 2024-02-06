@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*SLIDER DE IMAGENES INFINITO*/
+.contenedor-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider--inner {
+  display: flex;
+  width: 100%;
+  transform: translateX(-100%);
+}
+
+.slider__section {
+  flex: 0 0 auto; /* Esto permite que los elementos tengan un ancho flexible basado en su contenido */
+  width: 100%;
+}
+
+.slider__section {
+  width: 100%;
+}
+
+.slider__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.slider__btn:hover {
+  background-color: #fff;
+}
+
+.slider__btn--left {
+  left: 10px;
+}
+
+.slider__btn--right {
+  right: 10px;
+}
+
+/*Area de banner pequeño 1*/
+#banner {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  padding: var(--padding-section);
+  padding-bottom: 0;
+}
+
+/*Area Cuidado*/
+.mid2 {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.mid21 {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.mid2 div,
+.mid21 div{
+  width: 50%;
+}
+
+/*Area Adulto mayor*/
+.mid3 {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.mid31 {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.mid3 div,
+.mid31 div{
+  width: 50%;
+}
+
+
+/* Estilo para todas las imágenes */
+img {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen al ancho del contenedor */
+}
+
+.img-scale {
+  transform: scale(1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.img-scale:hover {
+  transform: scale(1.05);
+}
+
+.section-page{
+  align-items: normal;
+}
+
+@media screen and (max-width: 850px) {
+  .contenedor-productos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-producto {
+    width: 50%;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .card-producto {
+    width: 100%;
+  }
+
+  .mid2,
+  .mid21,
+  .mid3,
+  .mid31{
+    flex-direction: column;
+  }
+}
