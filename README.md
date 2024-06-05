@@ -9,6 +9,7 @@
 
 ## Introducción
 Se desarrolló una página web para la botica Massfarma donde los usuarios pueden visualizar por categorías y añadir al carrito de compras los productos que se ofrecen.
+<br />
 **Demo:** https://jhonatanhuaman76.github.io/massfarma-web/
 
 ## Detalles del proyecto
