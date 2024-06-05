@@ -13,3 +13,6 @@ Se desarrolló una página web para la botica Massfarma donde los usuarios puede
 ## Detalles del proyecto
 - **Librerías:**  SwiperJS
 - **Editor:** Visual Studio Code
+
+## Demo
+https://jhonatanhuaman76.github.io/massfarma-web/
